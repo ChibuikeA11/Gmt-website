@@ -1,0 +1,329 @@
+
+html {
+    height: 100%;
+  }
+  
+  body,
+  :nth-of-type(.page-container) {
+    margin-left: 60px;
+    margin-right: 60px;
+    min-height: 100vh; /* Use 'vh' (viewport height) for better height adjustment */
+    overflow: hidden;
+  }
+  
+  .page-container {
+    max-width: 100%;
+  }
+  
+  .main-container {
+    position: relative;
+    max-width: 40%;
+    top: 120px;
+    margin-left: 40px;
+  }
+  
+  nav {
+    margin-left: 50px;
+  }
+  
+  .text1 {
+    font-family: 'Belanosima', sans-serif;
+    font-weight: lighter;
+  }
+  
+  h1 {
+    font-family: 'Belanosima', sans-serif;
+    font-size: 40px;
+  }
+  
+  .first-btn {
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    padding: 20px 50px;
+    color: white;
+    font-family: 'Belanosima', sans-serif;
+  }
+  
+  .image1 {
+    position: relative;
+    max-width: 30%;
+    height: auto;
+    left: 700px;
+    bottom: 250px;
+  }
+  
+  .border-text {
+    color: white;
+    background-color: red;
+    position: relative;
+    bottom: 170px;
+    padding: 20px;
+  }
+  
+  .page2-text {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  
+  .text-page2 {
+    margin-top: 20px;
+    font-size: 40px;
+    font-family: 'Belanosima', sans-serif;
+    font-weight: 600;
+    margin-left: 70px;
+    margin-right: 70px;
+    line-height: 40px;
+  }
+  
+  .second-page {
+    font-size: 20px;
+    align-items: center;
+    margin-left: 90px;
+    margin-right: 90px;
+    font-weight: 200;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    bottom: 100px;
+    line-height: 30px;
+  }
+
+  .info-box1{
+    margin-right: 20px;
+  }
+
+  .info-box3{
+    margin-left:20px ;
+  }
+  
+  .info-box1,
+  .info-box2,
+  .info-box3 {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    height: 60vh;
+    width: 40%;
+    box-sizing: border-box;
+    box-shadow: 0px 3px 10px 2px rgba(194, 194, 194, 1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    
+  }
+
+  .info-box1:hover, .info-box2:hover, .info-box3:hover {
+    transform: scale(1.1); /* Zoom in by 10% */
+    box-shadow: 2px 2px 15px rgba(255, 0, 0, 0.6); 
+  }
+  
+  .page2-container {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .text1-header,
+  .text2-header,
+  .text3-header {
+    font-family: 'Belanosima', sans-serif;
+    color: red;
+  }
+  
+.btn1{
+    background-color: rgb(25, 25, 25);
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 15px;
+}
+
+  .btn2 {
+    background-color: rgb(219, 23, 23);
+    color: white;
+    width: 100%;
+    padding: 15px;
+    border: none;
+  }
+  
+  .collapse-wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .collapse-div {
+    margin-right: 10px;
+    width: 40%;
+  }
+
+.page3-div{
+    max-width: max-content;
+    margin-top: 30px;
+}
+
+.page3-text{
+    text-align: center;
+    margin-top: 150px;
+    position: relative;
+    left: 100px;
+    font-family: "Belanosima", sans-serif;
+}
+
+h3{
+    position: relative;
+    top: 50px;
+    justify-content: center;
+    text-align: center;
+    font-family: "Belanosima", sans-serif;
+}
+
+.image2{
+
+    width: 100%;
+    position: relative;
+    height: 80vh;
+    left: 130px;
+    margin-top: 40px;
+}
+
+.page4-div{
+  max-height: max-content;
+  margin-bottom: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+}
+
+.page5-text{
+  margin-top: 120px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.testimonial-container{
+  margin-top: 100px;
+  width: 30%;
+  height: 50vh;
+
+}
+
+.testimonial-card1, .testimonial-card2{
+  box-shadow: 0px 0px 7px 3px rgba(255, 121, 121, 1);
+  height: 20vh;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.testimonial-card2{
+  margin-top: 40px;
+}
+
+.author-image{
+  border-radius: 50%;
+  height: 10vh;
+  width: 20%;
+}
+
+.testimonial-text{
+  justify-content: center;
+  text-align: center;
+  margin-left: 30px;
+  font-size: 10px;
+  width: 60%;
+  height: 15vh;
+
+}
+
+.custom-container{
+position: relative;
+bottom: 250px;
+white-space: normal;
+}
+
+
+footer{
+    height: 50vh;
+    position: relative;
+    bottom: 100px;
+    margin-bottom: 0 auto;
+    margin-left: 20px;
+    margin-right: 20px;
+} 
+
+/* Your existing CSS code */
+
+/* Style for the plus and minus icons */
+.collapse-div button::after {
+    font-family: 'Font Awesome 5 Free'; /* Ensure you have the Font Awesome library loaded */
+    font-weight: 900;
+    content: "\f067"; /* Unicode for plus icon */
+    margin-left: 5px;
+  }
+  
+  .collapse-div .collapsed button::after {
+    content: "\f068"; /* Unicode for minus icon */
+  }
+  
+  /* Style for the collapsed content */
+  .collapse {
+    display: none;
+  }
+  
+  .collapse.show {
+    display: block;
+  }
+  
+iframe{
+    align-items: center;
+    margin-left: 90px;
+    margin-top: 100px;
+}  
+
+/* Your existing CSS code */
+
+/* Media query for smaller screens (max-width: 767px) */
+@media screen and (max-width: 767px) {
+  body {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .main-container {
+    max-width: 100%;
+    margin-left: 20px;
+  }
+
+  .image1 {
+    left: 0;
+    bottom: 0;
+  }
+
+  .border-text {
+    bottom: 40px;
+  }
+
+  .page2-text {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .info-box1,
+  .info-box2,
+  .info-box3 {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+/* Media queries for other screen sizes (added for reference) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* Your styles for medium-sized screens */
+}
+
+@media screen and (min-width: 992px) {
+  /* Your styles for larger screens */
+}
