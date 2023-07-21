@@ -1,14 +1,20 @@
 
 html {
     height: 100%;
+    margin: auto;
+    font-family: 'Mulish', sans-serif;
+  }
+
+  *html{
+    box-sizing: border-box;
   }
   
   body,
   :nth-of-type(.page-container) {
-    margin-left: 60px;
-    margin-right: 60px;
+    /* margin-left: 60px;
+    margin-right: 60px; */
     min-height: 100vh; /* Use 'vh' (viewport height) for better height adjustment */
-    overflow: hidden;
+    overflow: scroll;
   }
   
   .page-container {
@@ -27,12 +33,12 @@ html {
   }
   
   .text1 {
-    font-family: 'Belanosima', sans-serif;
+    font-family: 'Mulish', sans-serif;
     font-weight: lighter;
   }
   
   h1 {
-    font-family: 'Belanosima', sans-serif;
+    font-family: 'Mulish', sans-serif;
     font-size: 40px;
   }
   
@@ -42,7 +48,7 @@ html {
     border-radius: 5px;
     padding: 20px 50px;
     color: white;
-    font-family: 'Belanosima', sans-serif;
+    font-family: 'Mulish', sans-serif;
   }
   
   .image1 {
@@ -57,19 +63,17 @@ html {
     color: white;
     background-color: red;
     position: relative;
+    max-width: 100%;
     bottom: 170px;
     padding: 20px;
   }
   
-  .page2-text {
-    margin-left: 200px;
-    margin-right: 200px;
-  }
+ 
   
   .text-page2 {
     margin-top: 20px;
     font-size: 40px;
-    font-family: 'Belanosima', sans-serif;
+    font-family: 'Mulish', sans-serif;
     font-weight: 600;
     margin-left: 70px;
     margin-right: 70px;
@@ -101,8 +105,8 @@ html {
   .info-box2,
   .info-box3 {
     background-color: white;
-    border-radius: 15px;
-    padding: 20px;
+    border-radius: 20px;
+    padding: 15px;
     height: 60vh;
     width: 40%;
     box-sizing: border-box;
@@ -115,7 +119,7 @@ html {
     transform: scale(1.1); /* Zoom in by 10% */
     box-shadow: 2px 2px 15px rgba(255, 0, 0, 0.6); 
   }
-  
+
   .page2-container {
     margin-top: 90px;
     display: flex;
@@ -126,7 +130,8 @@ html {
   .text1-header,
   .text2-header,
   .text3-header {
-    font-family: 'Belanosima', sans-serif;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 900;
     color: red;
   }
   
@@ -157,85 +162,109 @@ html {
   }
 
 .page3-div{
-    max-width: max-content;
+    max-width: 100%;
     margin-top: 30px;
+    font-size: 20px;
 }
 
 .page3-text{
     text-align: center;
-    margin-top: 150px;
-    position: relative;
-    left: 100px;
-    font-family: "Belanosima", sans-serif;
+    margin: 0 auto;
+    font-size: 20px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 900;
 }
 
-h3{
+.page3-text3{
     position: relative;
     top: 50px;
     justify-content: center;
+    font-size: 20px;
     text-align: center;
-    font-family: "Belanosima", sans-serif;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 900;
 }
 
 .image2{
-
-    width: 100%;
+    max-width: 80%;
     position: relative;
     height: 80vh;
     left: 130px;
     margin-top: 40px;
+    /* display: none; */
 }
+
 
 .page4-div{
   max-height: max-content;
   margin-bottom: 300px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
 
 }
 
 .page5-text{
   margin-top: 120px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Mulish', sans-serif; 
 }
 
-.testimonial-container{
-  margin-top: 100px;
-  width: 30%;
-  height: 50vh;
+#testimonial-wrapper{
+  margin: 0 auto;
+}
+/* Your existing CSS code */
+.testimonial-container {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column; /* Align cards vertically */
+  align-items: center;
+  justify-content: center;
 
 }
 
-.testimonial-card1, .testimonial-card2{
+.testimonial-card1,
+.testimonial-card2 {
   box-shadow: 0px 0px 7px 3px rgba(255, 121, 121, 1);
-  height: 20vh;
+  height: 30vh;
   width: 100%;
   border-radius: 10px;
   padding: 10px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
-.testimonial-card2{
+.testimonial-card2 {
   margin-top: 40px;
 }
 
-.author-image{
+.author-image {
   border-radius: 50%;
   height: 10vh;
   width: 20%;
 }
 
-.testimonial-text{
+.card-text{
+  font-size: 10px;
+  
+}
+
+.card-body{
+  overflow: hidden;
+ 
+}
+
+.testimonial-text {
   justify-content: center;
   text-align: center;
+  line-height: 1;
   margin-left: 30px;
   font-size: 10px;
   width: 60%;
-  height: 15vh;
-
+  height: 12vh;
 }
+
 
 .custom-container{
 position: relative;
@@ -249,8 +278,8 @@ footer{
     position: relative;
     bottom: 100px;
     margin-bottom: 0 auto;
-    margin-left: 20px;
-    margin-right: 20px;
+    /* margin-left: 20px;
+    margin-right: 20px; */
 } 
 
 /* Your existing CSS code */
@@ -282,48 +311,208 @@ iframe{
     margin-top: 100px;
 }  
 
-/* Your existing CSS code */
 
-/* Media query for smaller screens (max-width: 767px) */
-@media screen and (max-width: 767px) {
-  body {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
+/* Media query for smaller screens (320px to 767px) */
+@media (min-width: 320px) and (max-width: 767px) {
 
+  /* Centering the main-container */
   .main-container {
     max-width: 100%;
-    margin-left: 20px;
+    margin: 0 auto;
+    top: 10px;
+    position: relative;
+    font-size: 16px;
   }
 
+.text-page2{
+  font-weight: bold;
+}
+
+  .h1-text{
+    font-size: 20px;
+    font-family: 'Mulish', sans-serif;
+  }
+
+  .text-section{
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 150px;
+  }
+
+  .first-btn{
+    padding: 10px 20px;
+    font-size: 16px;
+   
+  }
+
+  .page3-text{
+    margin-bottom: 40px;
+    font-size: 16px;
+
+  }
+
+  .page3-div{
+    margin-bottom: 100px;
+  }
+
+  .page3-text3{
+    font-size: 16px;
+  }
+
+  .card-text{
+    font-size: 10px;
+  }
+
+  .card-body{
+    padding: 5px;
+  }
+  /* Centering the nav */
+  nav {
+    margin: 2 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Centering .image1 */
   .image1 {
-    left: 0;
-    bottom: 0;
+    max-width: 30%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    bottom: 250px;
+    display: none;
   }
 
+  /* Centering .border-text */
   .border-text {
-    bottom: 40px;
+    bottom: 170px;
+    position: relative;
+    max-width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    display: none;
   }
 
-  .page2-text {
-    margin-left: 20px;
-    margin-right: 20px;
+  .collapse-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+
+  .collapse-div{
+    min-width: 80%;
+  }
+
+.testimonial-wrapper{
+  margin: 0 auto;
+}
+
+  .testimonial-container{
+    align-items: center;
+    max-height: auto;
+    width: 100%;
+    margin: 0 auto;
+  }
+  /* Centering .page2-text */
+  .page2-text {
+    font-size: 16px;
+    font-family: 'Mulish', sans-serif;
+    text-align: center;
+    line-height: 1.5; /* Adjust the line-height to your preference */
+    max-width: 80%;
+    margin: 20px auto;
+  }
+.text-page2{
+    font-size: 16px;
+    margin:0 auto ;
+    line-height: 1;
+    font-weight: 800;
+    font-family: 'Mulish', sans-serif;
+}
+  /* Centering .second-page */
+  .second-page {
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    bottom: 100px;
+    line-height: 30px;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  /* Centering .info-box1, .info-box2, and .info-box3 */
+.info-box2{
+  position: relative;
+  top: 30px;
+}
+
+.info-box3{
+position: relative;
+top: 60px;
+}
 
   .info-box1,
   .info-box2,
   .info-box3 {
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    height: 40vh;
+    width: 80%; /* You can adjust this value to your preference */
+    box-sizing: border-box;
+    box-shadow: 0px 3px 10px 2px rgba(194, 194, 194, 1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 0 auto;
   }
+
+  .container-text,
+  .container2-text, 
+  .container3-text{
+    font-size: 15px;
+    font-family: 'Mulish', sans-serif;
+    line-height: 1.5;
+    
+  }
+
+  .page2-container{
+    display: flex;
+    flex-direction: column;
+    /* margin: 0 auto; */
+    max-height: max-content;
+    width: 100%;
+  }
+
+
+.page4-div iframe{
+  margin: 0 auto;
+  min-height: 20vh;
+  max-width: 90%;
 }
 
-/* Media queries for other screen sizes (added for reference) */
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  /* Your styles for medium-sized screens */
+.image2 {
+  max-width: 90%;
+  margin: 0 auto;
+  left: 5%;
+  right: 5%;
+  max-height: 50vh;
 }
 
-@media screen and (min-width: 992px) {
-  /* Your styles for larger screens */
+.testimonial-container{
+  text-align: center;
+  margin-right: 0;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+  .page4-div{
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer{
+    margin: 0 auto;
+  }
 }
