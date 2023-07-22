@@ -66,6 +66,7 @@ html {
     max-width: 100%;
     bottom: 170px;
     padding: 20px;
+    justify-content: space-around;
   }
   
  
@@ -191,16 +192,15 @@ html {
     height: 80vh;
     left: 130px;
     margin-top: 40px;
-    /* display: none; */
+   
 }
 
-
 .page4-div{
-  max-height: max-content;
+  /* max-height: max-content; */
   margin-bottom: 300px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
 
 }
 
@@ -212,13 +212,15 @@ html {
 #testimonial-wrapper{
   margin: 0 auto;
 }
-/* Your existing CSS code */
+
+
 .testimonial-container {
   margin-top: 20px;
-  width: 100%;
+  max-width: 100%;
+  margin-right: 0;
   height: auto;
   display: flex;
-  flex-direction: column; /* Align cards vertically */
+  flex-direction: row; /* Align cards vertically */
   align-items: center;
   justify-content: center;
 
@@ -228,7 +230,7 @@ html {
 .testimonial-card2 {
   box-shadow: 0px 0px 7px 3px rgba(255, 121, 121, 1);
   height: 30vh;
-  width: 100%;
+  width: 80%;
   border-radius: 10px;
   padding: 10px;
   display: flex;
@@ -265,24 +267,19 @@ html {
   height: 12vh;
 }
 
-
 .custom-container{
-position: relative;
-bottom: 250px;
-white-space: normal;
+  position: relative;
+  bottom: 250px;
+  white-space: normal;
 }
-
 
 footer{
     height: 50vh;
     position: relative;
     bottom: 100px;
     margin-bottom: 0 auto;
-    /* margin-left: 20px;
-    margin-right: 20px; */
 } 
 
-/* Your existing CSS code */
 
 /* Style for the plus and minus icons */
 .collapse-div button::after {
@@ -305,9 +302,12 @@ footer{
     display: block;
   }
   
+
 iframe{
     align-items: center;
-    margin-left: 90px;
+    width: 50%;
+    
+   margin-left: 50px;
     margin-top: 100px;
 }  
 
@@ -317,11 +317,20 @@ iframe{
 
   /* Centering the main-container */
   .main-container {
-    max-width: 100%;
-    margin: 0 auto;
+    max-width: 80%;
+    /* margin: 5 auto; */
     top: 10px;
     position: relative;
     font-size: 16px;
+  }
+
+  .image1 {
+    margin-top: 300px;
+    left:0;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    /* margin: 0 auto;  */
   }
 
 .text-page2{
@@ -373,17 +382,6 @@ iframe{
     justify-content: center;
   }
 
-  /* Centering .image1 */
-  .image1 {
-    max-width: 30%;
-    height: auto;
-    margin: 0 auto;
-    position: relative;
-    bottom: 250px;
-    display: none;
-  }
-
-  /* Centering .border-text */
   .border-text {
     bottom: 170px;
     position: relative;
@@ -449,8 +447,8 @@ iframe{
 }
 
 .info-box3{
-position: relative;
-top: 60px;
+  position: relative;
+  top: 60px;
 }
 
   .info-box1,
@@ -460,7 +458,7 @@ top: 60px;
     border-radius: 15px;
     padding: 15px;
     height: 40vh;
-    width: 80%; /* You can adjust this value to your preference */
+    width: 80%; 
     box-sizing: border-box;
     box-shadow: 0px 3px 10px 2px rgba(194, 194, 194, 1);
     transition: transform 0.3s, box-shadow 0.3s;
@@ -479,24 +477,24 @@ top: 60px;
   .page2-container{
     display: flex;
     flex-direction: column;
-    /* margin: 0 auto; */
     max-height: max-content;
     width: 100%;
   }
 
 
-.page4-div iframe{
+iframe{
   margin: 0 auto;
   min-height: 20vh;
-  max-width: 90%;
+  width: 90%;
 }
 
 .image2 {
   max-width: 90%;
   margin: 0 auto;
+  align-items: center;
   left: 5%;
   right: 5%;
-  max-height: 50vh;
+  max-height: 40vh;
 }
 
 .testimonial-container{
@@ -505,6 +503,17 @@ top: 60px;
   display: flex;
   flex-direction: column;
   
+}
+
+
+#testimonial-wrapper{
+  margin: 0 auto;
+}
+
+.testimonial-card1,
+ .testimonial-card2{
+  width: 100%;
+ 
 }
 
   .page4-div{
@@ -516,3 +525,6 @@ top: 60px;
     margin: 0 auto;
   }
 }
+
+
+/*media screen for median screen sizes of 991
