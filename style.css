@@ -319,6 +319,7 @@ iframe{
   .main-container {
     max-width: 80%;
     /* margin: 5 auto; */
+    margin-left: 15px;
     top: 10px;
     position: relative;
     font-size: 16px;
@@ -340,11 +341,12 @@ iframe{
   .h1-text{
     font-size: 20px;
     font-family: 'Mulish', sans-serif;
+    font-weight: 900;
   }
 
   .text-section{
     font-size: 16px;
-    padding: 10px;
+    padding: 5px;
     margin-bottom: 150px;
   }
 
@@ -366,6 +368,8 @@ iframe{
 
   .page3-text3{
     font-size: 16px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 
   .card-text{
@@ -377,7 +381,7 @@ iframe{
   }
   /* Centering the nav */
   nav {
-    margin: 2 auto;
+    margin: 1 auto;
     display: flex;
     justify-content: center;
   }
@@ -388,7 +392,7 @@ iframe{
     max-width: 100%;
     padding: 10px;
     margin: 0 auto;
-    display: none;
+    
   }
 
   .collapse-wrapper{
